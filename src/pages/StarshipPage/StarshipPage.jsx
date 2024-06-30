@@ -19,9 +19,11 @@ const StarshipPage = () => {
   return (
     <>
       <h1>Starship Details</h1>
-      <h3>Name: {starship.name}</h3>
-      <h3>Model: {starship.model}</h3>
-      <Link to={`/starships`}>Return</Link>
+      <div className="starship-details">
+        <h3>Name: {starship.name}</h3>
+        <h3>Model: {starship.model}</h3>
+        <Link to={`/starships`}>Return</Link>
+      </div>
     </>
   )
 }
