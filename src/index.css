@@ -73,6 +73,21 @@ button:focus-visible {
   }
 }
 
+.category {
+  height: 60px;
+  width: 150px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.category:focus {
+  background-color: #535bf2;
+}
+
+.category:active {
+  background-color: #535bf2;
+}
+
 .starship-details {
   padding: 10px;
   text-align: start;
@@ -91,6 +106,5 @@ button:focus-visible {
   padding: 2px 4px;
   color: black;
   text-shadow: 0 0 8px rgb(0, 255, 157);
-
 }
 
