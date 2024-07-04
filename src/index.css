@@ -53,7 +53,7 @@ button {
   text-align: center;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #64ff98;
 }
 button:focus,
 button:focus-visible {
@@ -73,19 +73,29 @@ button:focus-visible {
   }
 }
 
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
 .category {
   height: 60px;
   width: 150px;
   margin-bottom: 30px;
   font-size: 14px;
+  background-color: #74ffd32f;
+  text-shadow: 0 0 12px rgb(0, 255, 157);
 }
 
 .category:focus {
-  background-color: #535bf2;
+  background-color: #53d7f2;
+  color: #213547;
 }
 
 .category:active {
   background-color: #535bf2;
+  
 }
 
 .starship-details {

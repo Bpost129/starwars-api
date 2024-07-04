@@ -55,7 +55,7 @@ const StarshipList = () => {
   return (
     <main>
       <h1>Star Wars Starships</h1>
-      <div>
+      <div className="category-container">
         <button className="category" onClick={() => handleFighter()}>Starfighter</button>
         <button className="category" onClick={() => handleBattle()}>Battlestation</button>
       </div>
