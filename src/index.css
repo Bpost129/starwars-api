@@ -118,3 +118,22 @@ button:focus-visible {
   text-shadow: 0 0 8px rgb(0, 255, 157);
 }
 
+.film {
+  background-color: #04090fab;
+  padding: 30px 40px;
+  border-radius: 12px;
+  
+}
+
+.film-episode {
+  color: #f2df53;
+}
+
+.film-title {
+  color: #f2df53;
+}
+
+.film-return {
+  font-size: 20px;
+  /* color: #64ff98; */
+}

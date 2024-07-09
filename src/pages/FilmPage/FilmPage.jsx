@@ -10,7 +10,7 @@ const FilmPage = () => {
   useEffect(() => {
     const fetchFilm = async () => {
       const filmData = await getFilm(filmId)
-      // console.log(filmData)
+      console.log(filmData)
       setFilm(filmData)
     }
 
@@ -20,10 +20,10 @@ const FilmPage = () => {
   // if (!film.length) return (<h1>Loading Film...</h1>)
 
   return (
-    <main>
-      <h2>Episode {film.episode_id}</h2>
-      <h1>{film.title}</h1>
-      <Link to={`/films`}>Return</Link>
+    <main className="film">
+      <h2 className="film-episode">Episode {film.episode_id}</h2>
+      <h1 className="film-title">{film.title}</h1>
+      <Link className="film-return" to={`/films`}>Return</Link>
     </main>
   )
 }
