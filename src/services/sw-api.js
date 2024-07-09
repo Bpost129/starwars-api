@@ -9,3 +9,8 @@ export async function getStarship(starshipId) {
   const res = await fetch(`${baseUrl}/starships/${starshipId}`)
   return res.json()
 }
+
+export async function getAllFilms() {
+  const res = await fetch(`${baseUrl}/films`)
+  return res.json()
+}
