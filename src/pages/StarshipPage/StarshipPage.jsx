@@ -15,6 +15,8 @@ const StarshipPage = () => {
 
     fetchStarship()
   }, [starshipId])
+
+  if (!starship.length) return (<h1>Loading Starship...</h1>)
   
   return (
     <>

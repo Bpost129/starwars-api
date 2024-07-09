@@ -14,3 +14,8 @@ export async function getAllFilms() {
   const res = await fetch(`${baseUrl}/films`)
   return res.json()
 }
+
+export async function getFilm(filmId) {
+  const res = await fetch(`${baseUrl}/films/${filmId}`)
+  return res.json()
+}

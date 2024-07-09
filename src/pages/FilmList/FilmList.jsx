@@ -11,12 +11,18 @@ const FilmList = () => {
   useEffect(() => {
     const fetchFilmList = async () => {
       const filmData = await getAllFilms()
-      console.log(filmData.results)
-      setFilms(filmData.results)
+      // console.log(filmData.results)
+      const sortedFilms = filmData.results.sort((a, b) => 
+        a.episode_id - b.episode_id
+      )
+      setFilms(sortedFilms)
+      // setFilms(filmData.results)
     }
 
     fetchFilmList()
   }, [])
+
+  if (!films.length) return (<h1>Loading Films...</h1>)
 
   return (
     <main>
